@@ -1,0 +1,11 @@
+$.ajax({
+                    type:'get',
+                    url:'data.json',
+                    dataType:'json',
+                    success:function(data){
+                          
+                    },
+                    error:function(){
+                        console.log('失败')
+                    }
+                })

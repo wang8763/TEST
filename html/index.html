@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+        <title>test</title>
+        <link rel="stylesheet" type="text/css" href="../plugins/layui/css/layui.css" />
+        <link rel="stylesheet" type="text/css" href="../css/index.css" />
+    </head>
+
+    <body>
+        <div class="warp">
+            <header>
+                <!-- <div id="fullScreen" class="control">开启全屏</div> -->
+                <!-- <div id="refresh" class="control">查看全部</div> -->
+                <h1 class="title">
+                    <i class="title-logo"><img src="../images/logo.png"/></i> test
+                </h1>
+                <div class="search layui-form-item">
+                    <div class="layui-input-inline input-box">
+                        <input id="search-text" type="text" class="layui-input" placeholder="按产业搜索" />
+                        <div class="header-search">
+                            <!-- <h6>热门搜索</h6> -->
+                            <div class="header-search-hotword">
+                                <a id="specHotWord">四川</a>
+                                <a id="specHotWord">重庆</a>
+                                <a id="specHotWord">广东</a>
+                                <a id="specHotWord">丑柑</a>
+                                <a id="specHotWord">金柚</a>
+                                <a id="specHotWord">猕猴桃</a>
+                                <a id="specHotWord">麦冬</a>
+                                <a id="specHotWord">生猪</a>
+                                <a id="specHotWord">茶叶</a>
+                            </div>
+                        </div>
+                    </div>
+                    <button id="search" class="layui-btn">搜索</button>
+                    <button id="refresh" class="layui-btn">查看全部</button>
+                </div>
+            </header>
+            <div class="map-box">
+                <div id="map"></div>
+                <!--
+                    <div id="left-mes" class="mes">
+                    	<p><span id="haveDemo">4</span> 个基地定制平台</p>
+                    	<p><span id="havdServer">44</span> 个服务地区</p>
+                    </div>
+                -->
+            </div>
+        </div>
+        <footer style="width:100%;text-align:center;font-size: 16px; color: #fff;">
+            <p style="padding: 10px 0">
+                <span>Copyright © All Rights Reserved </span>
+                <a
+                    href=""
+                    style="color: #fff;"
+                    onmouseover="this.style.cssText='color: #fff;text-decoration:underline;'"
+                    onmouseout="this.style.cssText='color: #fff;text-decoration:none'"
+                    ></a
+                >
+            </p>
+        </footer>
+    </body>
+    <script src="../plugins/jquery-2.1.4/jquery-2.1.4.js"></script>
+    <script src="../plugins/echarts/echarts.js"></script>
+    <script src="../plugins/layui/layui.all.js"></script>
+    <script src="../plugins/map-data/china.js"></script>
+    <script src="../js/index.js"></script>
+    <script src="../json/china.json?cb=callChina"></script>
+</html>
